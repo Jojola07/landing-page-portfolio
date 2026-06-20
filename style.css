@@ -52,3 +52,43 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--dourado)
 }
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--preto);
+    border-bottom: 1px solid var(--cinza-médio);
+}
+
+.hero-conteudo h2 {
+    font-size: 3rem;
+    color: var(--dourado);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero-conteudo p {
+    font-size: 1.1rem;
+    color: var(--texto-suave);
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.btn {
+    background-color: var(--dourado);
+    color: var(--preto);
+    padding: 14px 36px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--dourado-claro);
+}
