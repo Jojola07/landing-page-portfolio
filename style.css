@@ -163,3 +163,65 @@ nav ul li a:hover {
     font-size: 1rem;
     margin-bottom: 20px;
 }
+
+#contato {
+    padding: 80px 60px;
+    background-color: var(--cinza-escuro);
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    color: var(--dourado);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    background-color: var(--cinza-médio);
+    border: 1px solid var(--cinza-médio);
+    color: var(--branco);
+    padding: 14px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border: 1px solid var(--dourado);
+}
+
+.formulario textarea {
+    height: 120px;
+    resize: none;
+}
+
+.formulario button {
+    background-color: var(--dourado);
+    color: var(--preto);
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: var(--dourado-claro);
+}
