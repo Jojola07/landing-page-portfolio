@@ -243,6 +243,11 @@ nav ul li a:hover {
     background-color: var(--dourado-claro);
 }
 
+.formulario option {
+    background-color: var(--cinza-medio);
+    color: var(--branco);
+}
+
 footer {
     background-color: var(--cinza-escuro);
     padding: 60px 60px 30px;
