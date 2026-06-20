@@ -15,26 +15,27 @@ function validarFormulario() {
         });
         return;
     }
-}
 
-const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-if (emailValido) {
+
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!emailValido) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Email Inválido',
+            text: 'Por favor, insira um email válido.',
+            background: '#1a1a1a',
+            color: '#f5f5f5',
+            confirmButtonColor: '#c9a84c'
+        });
+        return;
+    }
+
     Swal.fire({
-        icon: 'error',
-        title: 'Email Inválido',
-        text: 'Por favor, insira um email válido.',
+        icon: 'success',
+        title: 'Agendamento enviado!',
+        text: 'Em breve entraremos em contato no seu e-mail para confirmar seu horário.',
         background: '#1a1a1a',
         color: '#f5f5f5',
         confirmButtonColor: '#c9a84c'
     });
-    return;
 }
-
-Swal.fire({
-    icon: 'success',
-    title: 'Agendamento enviado!',
-    text: 'Em breve entraremos em contato no seu e-mail para confirmar seu horário.',
-    background: '#1a1a1a',
-    color: '#f5f5f5',
-    confirmButtonColor: '#c9a84c'
-});
