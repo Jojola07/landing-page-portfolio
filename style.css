@@ -63,6 +63,12 @@ nav ul li a:hover {
     border-bottom: 1px solid var(--cinza-medio);
 }
 
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-conteudo h2 {
     font-size: 3rem;
     color: var(--dourado);
