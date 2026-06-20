@@ -56,8 +56,10 @@ nav ul li a:hover {
 #hero {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom: 80px;
     text-align: center;
     background-color: var(--preto);
     border-bottom: 1px solid var(--cinza-medio);
@@ -82,6 +84,15 @@ nav ul li a:hover {
     color: var(--texto-suave);
     margin-bottom: 40px;
     max-width: 500px;
+}
+
+.hero-carro {
+    width: 900px;
+    max-width: 100%;
+    display: block;
+    margin-bottom: -190px;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 76%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 73%);
 }
 
 .btn {
