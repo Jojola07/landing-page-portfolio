@@ -92,3 +92,74 @@ nav ul li a:hover {
 .btn:hover {
     background-color: var(--dourado-claro);
 }
+
+#servicos {
+    padding: 80px 60px;
+    background-color: var(--cinza-escuro);
+    text-align: center;
+}
+
+#servicos h2 {
+    font-size: 2rem;
+    color: var(--dourado);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--cinza-médio);
+    padding: 40px 30px;
+    width: 220px;
+    border-bottom: 3px solid var(--dourado);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: var(--dourado);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.card p {
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+}
+
+#sobre {
+    padding: 80px 60px;
+    background-color: var(--preto);
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-conteudo {
+    max-width: 700px;
+    text-align: center;
+}
+
+.sobre-conteudo h2 {
+    font-size: 2rem;
+    color: var(--dourado);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.sobre-conteudo p {
+    color: var(--texto-suave);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
