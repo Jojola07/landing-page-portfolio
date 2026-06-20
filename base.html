@@ -7,8 +7,90 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>Prime Auto Detail</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="sobre">Sobre</a></li>
+                <li><a href="contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-conteudo">
+            <h2>Seu carro merece o melhor cuidado</h2>
+            <p>Polimento, vitrificação, higienização e muito mais. Qualidade premium em Volta Redonda.</p>
+            <a href="#contato" class="btn">Agende agora</a>
+        </div>
+    </section>
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="cards">
 
-    
+            <div class="card">
+                <h3>Polimento e Vitrificação</h3>
+                <p>Proteção e brilho duradouro para a pintura do seu veículo.</p>
+            </div>
+
+            <div class="card">
+                <h3>Higienização Interna</h3>
+                <p>Limpeza completa do interior com produtos especializados.</p>
+            </div>
+
+            <div class="card">
+                <h3>Insufilm</h3>
+                <p>Lavagem minuciosa externa e interna, sem deixar nenhum detalhe passar.</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="sobre">
+        <div class="sobre-conteudo">
+            <h2>Sobre Nós</h2>
+            <p>A Prime Auto Detail nasceu da paixão por carros e pela excelẽncia no atendimento. Com anos de experiência no mercado de estética automotiva em Volta Redonda, oferecemos serviços premium com produtos de alta qualidade e profissionais especializados.</p>
+            <p>Nosso compromisso é entregar o melhor resultado para o seu veículo, sempre com pontualidade e transparência.</p>
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Agende seu Serviço</h2>
+        <div class="formulario">
+            <input type="text" id="nome" placeholder="Seu Nome">
+            <input type="email" id="email" placeholder="Seu e-mail">
+            <select id="servico">
+                <option value="">Selecione um serviço</option>
+                <option value="polimento">Polimento e Vitrificação</option>
+                <option value="higienizacao">Higienização Interna</option>
+                <option value="insufilm">Insufilm</option>
+                <option value="lavagem">Lavagem Detalhada</option>
+            </select>
+            <textarea id="mensagem" placeholder="Informações adicionais"></textarea>
+            <button type="button" onclick="validarFormulario()">Agendar</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-info">
+                <h3>Prime Auto Detail</h3>
+                <p>Rua das Garagens, 452 - Volta Redonda, RJ</p>
+                <p>contato@primeautodetail.com.br</p>
+                <p>(24) 99999-9999</p>
+            </div>
+
+            <div class="footer-redes">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Prime Auto Detail. Todos os direitos reservados.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
